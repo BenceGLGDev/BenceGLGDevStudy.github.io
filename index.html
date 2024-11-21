@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul class="navbar">
+            <li class="logo-container"><div id="logo">Focus Keeper</div></li>
+            <div class="nav-items">
+                <li><a id="timers" href="#timer-section">⏱️ Timer</a></li>
+                <li><a id="studytips" href="#study-tips-section">📖 Study Tips</a></li>
+                <li><a id="studytech" href="#techniques-section">📖 Study Techniques</a></li>
+                <li><button id="settings-btn">⚙️ Settings</button></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Timer Section -->
+    <section id="timer-section" class="section active">
+        <div class="timer-container">
+            <h2 id="timer-mode">Focus Timer</h2>
+            <div id="timer-display">25:00</div>
+            <div class="controls">
+                <button class="control-btn focus">Focus</button>
+                <button class="control-btn short-break">Short Break</button>
+                <button class="control-btn long-break">Long Break</button>
+                <button class="control-btn start-btn">Start</button>
+            </div>
+        </div>        
+    </section>
+
+    <!-- Study Tips Section -->
+    <section id="study-tips-section" class="section">
+        <div class="study-tips">
+            <h3>Study Tips</h3>
+            <ul>
+                <li>Take regular breaks to stay focused.</li>
+                <li>Use the Pomodoro technique to manage your time.</li>
+                <li>Eliminate distractions during study sessions.</li>
+                <li>Practice active recall and spaced repetition.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Study Techniques Section -->
+    <section id="techniques-section" class="section">
+        <h3>Study Techniques</h3>
+        <ul>
+            <li><strong>Pomodoro Technique:</strong> Study for 25 minutes, then take a 5-minute break.</li>
+            <li><strong>Feynman Technique:</strong> Teach what you’ve learned to someone else.</li>
+            <li><strong>Active Recall:</strong> Test yourself on the material instead of just re-reading.</li>
+            <li><strong>Mind Mapping:</strong> Visualize concepts and their relationships with diagrams.</li>
+        </ul>
+    </section>
+
+    <!-- Music Player 
+    <div class="music-player">
+        <audio id="background-music" loop>
+            <source src="your-music-file.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="play-pause-btn">▶️</button>
+        <input type="range" id="volume-control" min="0" max="1" step="0.1" value="0.5">
+    </div>
+    -->
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <h3>Settings</h3>
+            <label for="focus-time-input">Focus Time (minutes):</label>
+            <input type="number" id="focus-time-input" value="25">
+            
+            <label for="short-break-input">Short Break Time (minutes):</label>
+            <input type="number" id="short-break-input" value="5">
+            
+            <label for="long-break-input">Long Break Time (minutes):</label>
+            <input type="number" id="long-break-input" value="30">
+            
+            <div class="modal-buttons">
+                <button id="save-settings" class="modal-btn save">Save</button>
+                <button id="close-settings" class="modal-btn close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Swapper 
+    <div class="background-swapper">
+        <button class="bg-btn" data-bg="D:/GitHub_Projects/StudyWeb/assets/imgs/background1">🌄 Background 1</button>
+        <button class="bg-btn" data-bg="bg2">🌅 Background 2</button>
+        <button class="bg-btn" data-bg="bg3">🌃 Background 3</button>
+    </div>
+    -->
+    <script src="scripts/app.js"></script>
+</body>
+</html>

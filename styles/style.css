@@ -1,0 +1,362 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8ede3;
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation Bar */
+header {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and nav items */
+    list-style: none;
+    padding: 0 40px;
+}
+
+.logo-container {
+    margin-right: auto;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.nav-items {
+    display: flex;
+    gap: 30px; /* Spacing between nav items */
+}
+
+.navbar a,
+#settings-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+#settings-btn:hover {
+    color: #ff6f61;
+}
+
+
+#studytips,
+#timers {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Timer Section */
+.section {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.section.active {
+    display: block;
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #a6a6a6;
+}
+
+#timer-display {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.control-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.focus {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+.short-break {
+    background-color: #5db0ff;
+    color: #fff;
+}
+
+.long-break {
+    background-color: #8bc34a;
+    color: #fff;
+}
+
+.start-btn {
+    background-color: #6d4c41;
+    color: #fff;
+}
+
+/* Study Tips Section */
+.study-tips {
+    background-color: #fff7e0;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.study-tips h3 {
+    margin-bottom: 10px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.modal-content h3 {
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    margin: 10px 0;
+}
+
+.modal-content input {
+    width: 80%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+.modal-btn {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-btn.save {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.modal-btn.close {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Body and General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8ede3;
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-image 0.5s ease;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0 40px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Timer Section */
+.timer-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#timer-display {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+/* Music Player */
+.music-player {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#play-pause-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#volume-control {
+    cursor: pointer;
+}
+
+/* Background Swapper */
+.background-swapper {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bg-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #6d4c41;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.bg-btn:hover {
+    background-color: #8c5647;
+}
+.section {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.section.active {
+    display: block;
+}
+#timer-mode {
+    font-size: 1.5rem;
+    color: #6d4c41;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Hide sections by default */
+.page-section {
+    display: none;
+}
+
+.page-section.hidden {
+    display: none;
+}
+
+.page-section:not(.hidden) {
+    display: block;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Navigation styles */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 1rem;
+    background-color: #007bff;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
